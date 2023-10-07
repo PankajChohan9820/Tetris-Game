@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/tetris-game/static/css/main.7ef27b4c.css",
+    "main.js": "/tetris-game/static/js/main.bf9adb50.js",
+    "static/js/787.0ef42b96.chunk.js": "/tetris-game/static/js/787.0ef42b96.chunk.js",
+    "static/media/tertisLogo.png": "/tetris-game/static/media/tertisLogo.cb6be5c573948b8b7e7e.png",
+    "static/media/bg-image-1.avif": "/tetris-game/static/media/bg-image-1.42afafdf729038e8e16c.avif",
+    "index.html": "/tetris-game/index.html",
+    "main.7ef27b4c.css.map": "/tetris-game/static/css/main.7ef27b4c.css.map",
+    "main.bf9adb50.js.map": "/tetris-game/static/js/main.bf9adb50.js.map",
+    "787.0ef42b96.chunk.js.map": "/tetris-game/static/js/787.0ef42b96.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ef27b4c.css",
+    "static/js/main.bf9adb50.js"
+  ]
+}
