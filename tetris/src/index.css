@@ -1,0 +1,163 @@
+/* Add these styles to position the image on the left */
+.left-panel {
+  grid-area: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-panel img {
+  max-width: 50%;
+  height: auto;
+  max-height: 80vh;
+}
+
+/* Adjust grid-template-areas to include the left panel */
+.app {
+  display: grid;
+  grid-template-areas:
+    "left right";
+  grid-template-columns: 30% 1fr;
+  background-image: url('assests/bg-image-1.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  z-index: -1;
+  color: #fff;
+  max-width: 100%; 
+}
+
+.right-panel {
+  display: grid;
+  grid-template-areas:
+    "title ."
+    "game controls";
+  grid-template-columns: repeat(2,1fr);
+}
+
+.right-panel img {
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px;
+  align-self: end;
+  justify-self: center;
+  grid-area: title;
+}
+
+.overlay {
+  margin: 20px;
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+}
+
+.upcoming-container {
+  background-color: #000; /* Set the background color to black */
+  padding: 10px; /* Add some padding around the container */
+  border: 2px solid #fff; /* Add a white border to create a TV frame */
+  text-align: center;
+  margin: 10px;
+  max-width: 300px;
+}
+
+.upcoming-screen {
+  /* border: 1px solid #fff; */
+  padding: 10px;
+  background-color: #000;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Display blocks in a column */
+  align-items: center; /* Center-align the blocks horizontally */
+}
+
+
+
+
+button {
+  padding: 10px;
+}
+.board {
+  border: 5px solid rgb(8, 11, 209);
+  border-top: none;
+  user-select: none;
+  margin: auto;
+  grid-area: game;
+  max-width: 100%;
+  max-height: 100vh;
+  /* overflow-x: auto; */
+}
+
+
+.controls {
+  grid-area: controls;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.row {
+  display: flex;
+}
+
+.pause {
+  /* display: block; */
+  margin: 10px;
+  display: flex;
+  justify-content: center; /* Horizontal center alignment */
+  align-items: center;
+}
+
+.upcoming {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cell {
+  width: 30px;
+  aspect-ratio: 1;
+  border: 1px solid #333;
+  box-shadow: inset;
+  margin: 1px;
+}
+
+
+.cell.hidden {
+  visibility: hidden;
+}
+
+.cell.Empty {
+  background-color: rgb(200, 200, 200);
+}
+
+.cell.I {
+  background-color: rgb(80, 227, 230);
+}
+
+.cell.J {
+  background-color: rgb(36, 95, 223);
+}
+
+.cell.L {
+  background-color: rgb(223, 173, 36);
+}
+
+.cell.O {
+  background-color: rgb(223, 217, 36);
+}
+
+.cell.S {
+  background-color: rgb(48, 211, 56);
+}
+
+.cell.T {
+  background-color: rgb(132, 61, 198);
+}
+
+.cell.Z {
+  background-color: rgb(227, 78, 78);
+}
